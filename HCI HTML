@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI - SESSION 1</title> 
+</head>
+
+<body>
+    <img src="teto.jpg" alt="" style="float: right; width: 300px; height: 380px;">
+    <!-- h1 -> is for headings --> 
+     <img src="UA-Logo.png" alt="" style="widge: 100px; height: 100px;">
+    <h1>Hello, UA!</h1>
+    <h3>Hello, UA!</h3>
+    <h6 >Hello, UA!</h6>
+
+    <!-- p -> is for paragraph -->
+     <p>This is a simple html paragraph using p tags</p>
+
+    <!-- hr for horizontal rule -->
+     <hr> 
+
+     <p><em>Lorem ipsum</em> dolor sit amet consectetur, adipisicing elit. Est omnis dolor iusto vero eaque minus blanditiis mollitia atque nulla delectus. Provident placeat tempore ullam sit, <strong>consequatur voluptas qui nobis sint.</strong></p>
+
+     <hr>
+
+     <!-- html unordered list -->
+
+     <h3>Summer Class</h3>
+
+     <ul>
+        <li>College of Engineering and Architecture</li>
+        <li>College of Education</li>
+        <li>College of Information Technology, Computing, and Library Science</li>
+        <ul>
+            <li>Information Technology</li>
+            <li>Computer Science</li>
+            <li>Associate Computer Technology</li>
+        </ul>
+     </ul>
+
+     <!-- HTML ordered list -->
+      <h3>CITCLS Program Offerings</h3>
+      
+      <ol type="I">
+        <li>Programming Courses</li>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+        </ul>
+        <li>Certifications</li>
+        <li>Majorship</li>
+        <ol type="i">
+            <li>Major in Web Development</li>
+            <li>Major in Mobile Application Development</li>
+        </ol>
+      </ol>
+</body>
+</html>
+      
