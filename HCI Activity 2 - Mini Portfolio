@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeirus Cruz's Portfolio</title>
+</head>
+<body>
+    <h2 id="top" align="center"><strong>Jeirus Cruz's Portfolio</strong></h2>
+    <p align="center">
+        <img src="grad pic.jpeg" alt="" style="width: 200px; height: 25 0px;">
+    </p>
+    <p align="center"><strong>Professional Web Developer</strong></p>
+
+    <h2>About Me</h2>
+
+    <a href="https://www.ua.edu.ph/academics/degrees-and-programs/" target="_blank">
+        <img src="https://www.ua.edu.ph/wp-content/uploads/2017/07/UA-Logo.png" alt="" style="width: 100px; height: 100px;">
+    </a>
+
+    <p>During my time at <a href="https://www.ua.edu.ph/academics/degrees-and-programs/" target="_blank">the University of the Assumption</a>, I immersed myself in coding, building projects, and mastering the fundamentals of web development. Every challenge, from debugging to optimizing performance, pushed me to improve my problem-solving skills. After graduation, I've been applying my knowledge to real-world projects, refining my skills in front-end and back-end development. I continue to learn new In the future, I aspire to work on innovative web solutions that impact users globally. Whether it's leading development teams, launching my own projects, or contributing to open-source communities, I aim to keep growing and pushing the boundaries of what's possible in web development.</p>
+
+    <h2>My Tools/Technology</h2>
+
+    <a href="https://www.python.org" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="" style="width: 80px; height: 80px;">
+    </a>
+    <p><strong>Python</strong> is one of the Coding Languages I'm able to utilize in order to code programs.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="" style="width: 80px; height: 80px;">
+    <p><strong>C++</strong>, similar to Python, is another Coding Language I use when writing code.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png" alt="" style="width: 80px; height: 80px;">
+    <p><strong>HTML</strong> is what I used to make this website!</p>
+
+    <h2>My Projects</h2>
+
+    A Website Portfolio with design using Figma!
+
+    <a href="https://www.figma.com/design/ihtynHtN9G1pRLTKIKNO5c/Midterms?node-id=2-604&t=83pyEMwLmQtPkfcK-1" target="_blank"> Click here to go to the Figma Design!</a>
+
+    <h2>My Contacts</h2>
+    
+    <a href="https://github.com/ReijusKusanagi" target="_blank"> GitHub</a>
+    <a href="https://www.facebook.com/Jeirusss" target="_blank"> FaceBook</a>
+    <p>jktcruz.student@ua.edu.ph</p>
+
+</body>
+</html>
