@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 2</title>
+
+</head>
+<body>
+
+    <h3 id="top">Attributes and Hyperlinks</h3>
+
+    <hr>
+
+    <p align="right">HELLO, ASSUMPTIONISTS!</p>
+    
+    <ol type="A" reversed>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <hr>
+
+    <h3>Hyperlinks</h3>
+    <h5>Absolute vs Relative Link</h5>
+
+    <hr>
+
+    <img src="https://cdn.britannica.com/33/226533-050-404C15AF/Canary-on-pear-branch.jpg" alt="This is a Canary bird" width="380px" height="300px">
+
+    <p>This image was generated using an absolute link.</p>
+
+    <img src="./images/birdies.jpg" alt="This is a canary bird." width="380px" height="300px">
+
+    <hr>
+
+    <h3>Anchor Tag</h3>
+
+    <hr>
+    
+    <a href="https://www.google.co.uk/" target="_blank">GOOGLE</a> <br> <br>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YOUTUBE</a>
+
+    <br> <br> <br> <br> <br>
+    <a href="#top">TOP</a>
+
+    <hr>
+
+    <h3>Traversal</h3>
+
+    <hr>
+
+    <a href="./images/background/index.html">Go to BACKGROUND INDEX</a>
+
+    <hr>
+
+    <h3>Clickable Images</h3>
+
+    <hr>
+
+    <a href="https://www.google.co.uk/" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png?f=webp&w=256" width="60px" height="60px"></a>
+    
+    <a href="https://www.youtube.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="" width="60px" height="60px"></a>
+</body>
+</html>     
