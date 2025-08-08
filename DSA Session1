@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        // This is a single-line comment!!!!!!
+        /*
+         * This
+         * is
+         * a
+         * multi-line
+         * comment
+         */
+
+         // Variable declaration and Data Types
+         String name; 
+         int age;
+         double gwa;
+         char grade;
+         boolean isEnrolled;
+
+         Scanner user_input = new Scanner(System.in);
+
+         System.out.println("Enter Name: ");
+         name = user_input.nextLine();
+         
+         System.out.println("Enter Age: ");
+         age = user_input.nextInt();
+
+         System.out.println("Enter GWA: ");
+         gwa = user_input.nextDouble();
+
+         System.out.println("Enter Grad (A-F): ");
+         grade = user_input.next().charAt(0);
+
+         System.out.println("Are you enrolled? ");
+         isEnrolled = user_input.nextBoolean();
+
+         System.out.println("**STUDENT PROFILE**");
+            System.out.println("Name: " + name);
+            System.out.println("Age: " + age);              
+            System.out.println("GWA: " + gwa);
+            System.out.println("Grade: " + grade);
+            System.out.println("Enrolled: " + isEnrolled);
+
+        if(gwa >= 3.5 && isEnrolled){
+            System.out.println("Status: Honor Student");
+        } else if(gwa >= 2.0 && isEnrolled){
+            System.out.println("Status: Regular Student");
+        } else if (gwa < 2.0 && isEnrolled) {
+            System.out.println("Status: Probationary Student");
+        } else {
+            System.out.println("Status: Not Enrolled");
+        }
+    }
+}
+
