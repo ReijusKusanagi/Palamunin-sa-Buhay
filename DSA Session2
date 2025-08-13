@@ -1,0 +1,68 @@
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner input_email = new Scanner(System.in);
+        String user_email;
+        // Java Basic Function 
+        // function calling of function invocation
+        sayHello();
+        enterUsername();
+        enterEmail("sample@mail.com");
+
+        System.out.print("Please enter your email: ");
+        user_email = input_email.nextLine();
+        enterEmail(user_email);
+
+        calculateGrade(90, 92, 97);
+
+        // Function calling with return
+        double totalAverage = calculateAverage(72, 79, 85);
+        System.out.println("YOUR GWA IS " + totalAverage);
+
+        getStudentStatus(totalAverage);
+
+    }
+ 
+    // declaration of new functions below the "void main"
+    public static void sayHello(){
+        System.out.println("Hello, UA Students!");
+        
+    }
+
+    public static void enterUsername(){
+        Scanner user_input = new Scanner(System.in);
+        String uname;
+        System.out.print("Enter username: ");
+        uname = user_input.nextLine();
+        System.out.println("Username: " + uname);
+    }
+
+    // Parameterized Function
+    public static void enterEmail(String email){
+        System.out.println("Email entered: " + email);
+
+    }
+
+    // Function with return statement
+    public static void calculateGrade(int g1, int g2, int g3){
+        double average = (g1 + g2 + g3)/3;
+        System.out.println("Your average is: " + average);
+        
+    }
+
+    public static double calculateAverage(int g1, int g2, int g3){
+        double average = (g1 + g2 + g3)/3;
+        System.out.println("Your average is: " + average);
+        return average;
+
+    }
+
+    public static void getStudentStatus(double gwa){
+        if(gwa >= 92){
+            System.out.println("STATUS: Honor Student");
+        } else {
+            System.out.println("STATUS: Regular Student");
+        } 
+
+    }
+}
