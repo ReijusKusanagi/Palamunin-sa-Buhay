@@ -1,0 +1,51 @@
+import java.util.*;
+
+public class Sample{
+    static boolean isRunning = true;
+
+    public static void main(String[] args) throws Exception {
+        while(isRunning){
+
+            //TO get the returned value -> input
+            int fetchedinput = getInput();
+        
+        }
+    }
+
+    // Methods/Functions
+    public static int getInput(){
+        Scanner user_input = new Scanner(System.in);
+        int input;
+ 
+        // Options/Menu/Dashboard
+        System.out.println("**DASHBOARD**\n[1]Say Hello\n[2]Exit");
+
+        System.out.print("Enter your choice: ");
+        input = user_input.nextInt();
+
+        return input;
+    }
+
+    public static void switchRouter(int choice){
+        switch(choice){
+            case 1:
+            sayHello();
+            break;
+            case 2:
+            exitProgram();
+            break;
+            default: 
+            System.out.println("Please choose 1 or 2 only.");
+            break;
+        }
+    }
+
+    public static void sayHello(){
+        System.out.println("Hello Everyone!");
+    }
+
+    public static void exitProgram(){
+        System.out.println("Program is now closing...");
+        isRunner = false;
+    }
+}
