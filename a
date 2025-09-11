@@ -1,0 +1,48 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        Scanner user_input = new Scanner(⁦System.in⁩);
+        System.out.print("[PLEASE INPUT AGE] ");
+        int age = user_input.nextInt();
+        
+        ageCheck(age);
+    }
+    
+    public static void ageCheck(int age){
+        if(age < 0){
+            System.out.println("Invalid Input.");
+        } else if(age >= 0 && age <= 1){
+            System.out.println("Infant.");
+    } else if(age >= 2 && age <= 12){
+        System.out.println("Child.");
+    } else if(age >=13 && age <= 19){
+        System.out.println("Teenager.");
+    } else if(age >=20 && age <= 64){
+        System.out.println("Adult");
+    } else {
+        System.out.println("Senior.");
+    }
+}
+}
+
+
+===========
+
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        for(int count = 1; count <= 50; count++){
+        if(count % 5 == 0){
+            System.out.println(count + " - Divisible by 5");
+        }
+        }
+
+     
+    }
+    
+}
