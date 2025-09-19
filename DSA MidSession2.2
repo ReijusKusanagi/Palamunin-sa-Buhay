@@ -1,0 +1,152 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class App {
+    // Global Variables
+    static boolean isRunning = true;
+    static int top = -1;
+    static int[] stack = {};
+    public static void main(String[] args) throws Exception {
+        stack = new int[5];
+
+        showDashboard();
+    }
+
+    // Show Dashboard
+    public static void showDashboard(){
+    while(isRunning){
+        System.out.println("**STACK DASHBOARD**");
+        System.out.println("[1] Peek");
+        System.out.println("[2] Push");
+        System.out.println("[3] Pop");
+        System.out.println("[4] Top");
+        System.out.println("[5] Clear");
+        System.out.println("[6] Exit");
+
+        int stored_input = dashboardInput();
+        switchCon(stored_input);
+    }
+
+    }
+    
+    // Get user input
+    public static int dashboardInput(){
+        Scanner dashboard_input = new Scanner(System.in);
+        int stored_input;
+        System.out.print("Please select an option between 1-5: ");
+        stored_input = dashboard_input.nextInt();
+        return stored_input;
+    }
+
+    // Switch Controller
+    public static void switchCon(int user_input){
+        switch(user_input){
+            case 1:
+            peek();
+            break;
+
+            case 2:
+            Scanner push_input = new Scanner(System.in);
+            int pushValue;
+            System.out.print("Enter a value to be pushed: ");
+            pushValue = push_input.nextInt();
+            push(pushValue);
+            break;
+
+            case 3:
+            pop();
+            break;
+
+            case 4:
+            top();
+            break;
+
+            case 5:
+            clear();
+            break;
+
+            case 6:
+            System.out.println("System is now turning off. Thank you very much! Byebye!");
+            isRunning = false;
+            break;
+        
+
+            default:
+            System.out.println("Enter a number from 1-6 PLEASE >:(");
+
+        }
+    }
+
+    // Peek Method/Function
+    public static void peek(){
+        if(top == -1){
+            System.out.println("**RESULT FROM PEEK**");
+            System.out.println("The stack is empty.");
+        }else{
+            System.out.println("**RESULT FROM PEEK**");
+            System.out.println(Arrays.toString(stack));
+        }
+    }
+
+    // Push Method/Function
+    public static void push(int pushValue){
+        if(isFull()){
+            System.out.println("**ERROR: STACK OVERFLOW!**");
+        }else{
+        top++;
+        stack[top] = pushValue;
+        System.out.println("**PUSH RESULT");
+        System.out.println(stack[top] + " is now added in the stack.");
+        }
+    }
+
+    // isFull -> STACK OVERFLOW
+    public static boolean isFull(){
+        if(top == 4){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+   
+    // Pop Method/Function
+    public static void pop() {
+    if (top == -1) {
+        System.out.println("**RESULT FROM POP**");
+        System.out.println("The stack is empty.");
+    } else {
+        int poppedElement = stack[top]; // accesses the index/element at the top
+        stack[top] = 0; // sets the value to 0 essentially deleting it
+        top--; // decerements top by 1 to let the program determine the amount of indices in the stack
+        System.out.println("**RESULT FROM POP**");
+        System.out.println("Popped element: " + poppedElement);
+    }
+}
+
+     // Top Method/Function
+     public static void top(){
+        if (top == -1) {
+        System.out.println("**RESULT FROM TOP**");
+        System.out.println("The stack is empty.");
+    } else {
+        System.out.println("The current top is currently at index " + top + " with a stored value of " + stack[top]); // prints the value and index
+    }
+    }
+
+     // Clear Method
+     public static void clear(){
+        if (top == -1) {
+        System.out.println("**RESULT FROM TOP**");
+        System.out.println("The stack is empty.");
+    } else {
+         for(int i = top; i >= 0; i--){ // loops equal to the amount of indices in the stack in order to remove all the values in the stack
+            stack[i] = 0; 
+            top--;
+     }
+
+     System.out.println("All indices have been cleared from the stack."); // confirmation
+
+}
+}
+}
